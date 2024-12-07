@@ -1004,6 +1004,10 @@
 
         .pg-3-lower-mobile{
             display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
         }
 
 
