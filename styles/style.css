@@ -22,6 +22,7 @@
         --background-color-secondary: #00E599;
     }
     
+    /* HERO SECTION  */
     .hero-section{
         width: 100%;
         min-height: 100vh;
@@ -113,6 +114,7 @@
     
     .hero-left {
         width: 60%;
+        height: 86.7vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -155,6 +157,10 @@
         align-items: center;
         gap: 16px;
         font-size: 16px;
+    }
+
+    .hero-buttons button {
+        border: none;
     }
     
     .hero-left-btn {
@@ -202,7 +208,7 @@
     }
     
     
-    /* PAGE 2  */
+    /* FEATURES SECTION  */
     .features-section {
         width: 100%;
         min-height: 100vh;
@@ -343,7 +349,7 @@
     }
     
     
-    /* PAGE 3 */
+    /* PLATFORM SECTION */
     .platform-section {
         width: 100%;
         min-height: 100vh;
@@ -438,7 +444,7 @@
     
     
     
-    /* PAGE 4  */
+    /*  FEATURES SECTION 2  */
     .features-section-2 {
         width: 100%;
         min-height: 100vh;
@@ -513,7 +519,7 @@
     }
 
 
-    /* PAGE 5 */
+    /* TESTIMONIALS SECTION */
     .testimonials-section {
         width: 100%;
         min-height: 100vh;
