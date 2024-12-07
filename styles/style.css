@@ -30,7 +30,7 @@
         flex-direction: column;
     }
     
-    .header{
+    .hero-section .header{
         width: 100%;
         background-color: #0A0A0A;
         display: flex;
