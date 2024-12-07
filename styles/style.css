@@ -208,6 +208,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transform: translateX(-17%);
     }
     
     
@@ -445,9 +446,12 @@
         font-weight: 700;
         font-size: 16px;
     }
+
+    .pg-3-lower-mobile{
+        display: none;
+    }
     
-    
-    
+
     
     /*  FEATURES SECTION 2  */
     .features-section-2 {
@@ -458,6 +462,10 @@
         align-items: center;
         justify-content: center;
         position: relative;
+    }
+
+    .features-page-2-mobile-svg {
+        display: none;
     }
 
     .features-section-2-mobile-svg{
@@ -834,13 +842,14 @@
         color: #FFFFFF;
         text-transform: capitalize;
         text-decoration: none;
+        text-align: center;
     }
 
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
 
-        .header {
+        .hero-section .header {
             display: none;
         }
     
@@ -912,11 +921,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0px;
+            padding-top: 50px;
         }
-    
+
         .hero-right .card-img img {
-            background-color: aqua;
+            transform: translateX(0%);
         }
 
 
@@ -988,46 +997,101 @@
             width: 100%;
             justify-content: center;
         }
-        
-        
+
+        .pg-3-sec-desktop {
+            display: none;
+        }
+
+        .pg-3-lower-mobile{
+            display: block;
+        }
+
 
 
         /* FEATURES-SECTION-2  */
         .features-section-2 {
+            width: 100%;
+            min-height: 100vh;
             padding: 40px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
         }
-        
-        .features-section-2-mobile-svg {
+    
+        .features-section-2-mobile-svg{
             display: block;
         }
         
-        #pg-4-box {
-            flex-direction: column;
-            padding-bottom: 24px;
-        }
-        
-        .pg-4-sec {
+        .pg-4-box {
             width: 100%;
-            padding: 40px 24px;
-            gap: 24px;
+            height: 100%;
+            border-radius: 24px;
+            border: 1px solid #E5E5E5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
-        .features-section-2-text-desktop {
+        .pg-4-box .pg-4-sec {
+            width: 100%;
+            height: 100%;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .pg-4-card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            padding: 0px;
+        }
+        
+        .pg-4-card-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    
+        .features-section-2-text-mobile{
             display: none;
         }
+
         
-        .features-section-2-text-mobile {
-            display: block;
+        .pg-4-card h3 {
+            font-size: 18px;
+            line-height: 27.9px;
+            font-weight: 700;
+            text-align: center;
         }
         
-        #pg-4-center img {
+        .pg-4-card h5 {
+            font-size: 16px;
+            line-height: 25.6px;
+            font-weight: 400;
+            color: #737373;
+            text-align: center;
+        }
+    
+        .pg-4-center {
+            width: 33.3%;
+            
+        }
+    
+        #pg-4-center {
             display: none;
         }
 
         #pg-4-right {
-            padding-top: 0px;
+            padding: 0px;
+            padding-bottom: 32px;
         }
-        
+    
 
 
 
@@ -1127,7 +1191,6 @@
             font-size: 16px;
             line-height: 24.8px;
             border-radius: 16px;
-            background-color: #ffffff34;
             color: #FFFFFF;
             display: flex;
             align-items: center;
