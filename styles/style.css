@@ -22,6 +22,10 @@
         --background-color-secondary: #00E599;
     }
 
+    button:hover {
+        cursor: pointer;
+    }
+
     
     /* HERO SECTION  */
     .hero-section{
