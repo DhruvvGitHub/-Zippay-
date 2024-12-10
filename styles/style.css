@@ -77,9 +77,14 @@
         gap: 6px;
     }
     
-    .nav-center h5 {
+    .nav-center a {
         font-size: 14px;
         line-height: 21.7px;
+        font-weight: 600;
+    }
+
+    .nav-center a:hover {
+        cursor: pointer;
     }
     
     .nav-right {

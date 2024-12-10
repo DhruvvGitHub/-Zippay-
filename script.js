@@ -25,13 +25,13 @@ questions.forEach((ques) => {
 
     minus.addEventListener("click", () => {
         gsap.to(answerText, {
-            duration: 0.15,
+            duration: 0.01,
             opacity: 0
         })
         gsap.to(answer, {
             duration: 0.5,
             height: 0,
-            onComplete: () => {
+            onStart: () => {
                 answer.style.display = "none"
                 plus.style.display = "block"
                 minus.style.display = "none"
