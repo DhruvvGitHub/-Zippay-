@@ -122,8 +122,11 @@ body {
     gap: 8px;
 }
 
-.nav-center {
-    /* gap: 24px; */
+.nav-center{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 .nav-center .nav-elem {

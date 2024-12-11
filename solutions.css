@@ -207,7 +207,7 @@
 
     .hero-upper .hero-header{ 
         padding: 8px 12px;
-        border: 1px solid #FFFFFF;
+        border: 1px solid rgba(255,255,255, 0.12);
         border-radius: 10px;
     }
 
@@ -427,6 +427,7 @@
     }
 
 
+    /* FAQ SECTION  */
     .FAQ-section {
         width: 100%;
         min-height: 100vh;
