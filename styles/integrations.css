@@ -196,6 +196,10 @@
         display: none;
     }
 
+    .hero-sub-title-mobile {
+        display: none;
+    }
+
 
     /* CATEGORIES SECTION  */
     .categories-section {
