@@ -1,92 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-    font-family: satoshi;
-    background-color: #FFFFFF;
-}
-
-@font-face {
-    font-family: satoshi;
-    src: url(../fonts/Satoshi-Regular.woff);
-}
-   
-:root {
-    --text-color-primary: #0A0A0A;
-    --background-color-primary: #00452E;
-    --background-color-secondary: #00E599;
-}
-
-.button {
-    width: fit-content;
-    font-size: 16px;
-    line-height: 24.8px;
-    font-weight: 700;
-    border: 1px solid #DFE1E6;
-    border-radius: 14px;
-    padding: 12px 16px;
-    background-color: transparent;
-}
-
-.green-button {
-    width: fit-content;
-    font-size: 16px;
-    line-height: 24.8px;
-    font-weight: 700;
-    border: 1px solid #DFE1E6;
-    border-radius: 14px;
-    padding: 12px 16px;
-    border: none;
-    background-color: var(--background-color-secondary);
-}
-
-.page-name{
-    font-size: 14px;
-    line-height: 21.7px;
-    font-weight: 600;
-    color: #00895C;
-}
-
-.main-title {
-    font-size: 68px;
-    line-height: 85px;
-    font-weight: 700;
-    letter-spacing: -2%;
-}
-
-.title {
-    font-size: 52px;
-    line-height: 65px;
-    font-weight: 700;
-    letter-spacing: -2%;
-}
-
-.sub-title {
-    font-size: 18px;
-    line-height: 27.9px;
-    font-weight: 400;
-    color: #737373;
-}
-
-.heading {
-    font-size: 18px;
-    line-height: 27.9px;
-    font-weight: 700;
-}
-
-.description {
-    font-size: 16px;
-    line-height: 25.6px;
-    font-weight: 400;
-    color: #737373;
-}
-
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -208,7 +119,15 @@ body {
 
 .hero-upper-right .buttons {
     display: flex;
+    align-items: center;
     gap: 16px;
+}
+
+.hero-upper-right .btn-2 {
+    padding: 12px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(223, 225, 230, 1);
+    font-weight: 700;
 }
 
 .hero-lower {
@@ -342,7 +261,7 @@ body {
     gap: 96px;
 }
 
-.features-lower-left-headings {
+.features-lower-card-headings {
     display: flex;
     flex-direction: column;
 }
@@ -354,6 +273,10 @@ body {
     padding: 20px;
     border: 1px solid #E5E5E5;
     border-radius: 1px;
+}
+
+.features-lower-left-heading .heading {
+    color: rgba(115, 115, 115, 1);
 }
 
 .features-lower-card-image img {
