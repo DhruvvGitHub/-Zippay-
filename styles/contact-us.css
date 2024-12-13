@@ -106,6 +106,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 96px;
 }
 
 .hero-form-wrapper {
@@ -279,6 +280,10 @@
     .hero-box {
         padding: 40px 24px;
         gap: 18px;
+    }
+
+    .hero-box-2 {
+        padding: 40px 0px;
     }
     
     .hero-box h1 {
