@@ -32,10 +32,21 @@
 }
 
 .nav-center {
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
-    width: 40%;
+}
+
+.nav-center .nav-elem a {
+    font-size: 14px;
+    line-height: 21.7px;
+    font-weight: 600;
+}
+
+.nav-center .nav-elem a:hover {
+    cursor: pointer;
 }
 
 .nav-elem {

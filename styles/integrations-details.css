@@ -23,7 +23,7 @@
     }
     
     .nav-section {
-        width: 30%;
+        width: 25%;
         display: flex;
         align-items: center;
     }
@@ -33,9 +33,10 @@
     }
 
     .nav-center{
-        width: 40%;
+        width: 50%;
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 24px;
     }
     
@@ -44,6 +45,16 @@
         align-items: center;
         gap: 6px;
         padding: 8px;
+    }
+
+    .nav-center .nav-elem a {
+        font-size: 14px;
+        line-height: 21.7px;
+        font-weight: 600;
+    }
+
+    .nav-center .nav-elem a:hover {
+        cursor: pointer;
     }
     
     .nav-right {
