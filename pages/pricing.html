@@ -4,98 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/solutions.css">
+    <link rel="stylesheet" href=".//styles/global.css">
+    <link rel="stylesheet" href=".//styles/pricing.css">
 </head>
 <body>
     <div id="main">
+
         <section class="hero-section">
-            <nav class="navbar">
-                <div class="nav-logo nav-section">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20 6.75285H13.2235V0.0234375H6.72941C6.72941 3.74108 3.71765 6.75285 0 6.75285V13.247H6.72941V19.9764H13.2235C13.2235 16.2587 16.2824 13.247 20 13.247V6.75285Z"
-                            fill="#0A0A0A" />
-                    </svg>
+            <nav class="main-nav">
+                <div class="nav-box">
+                    <div class="nav-left nav-section">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 6.75285H13.2235V0.0234375H6.72941C6.72941 3.74108 3.71765 6.75285 0 6.75285V13.247H6.72941V19.9764H13.2235C13.2235 16.2587 16.2824 13.247 20 13.247V6.75285Z"
+                                fill="#0A0A0A" />
+                        </svg>
 
-                    <h3>Zippay</h3>
-                </div>
-                <div class="nav-center nav-section">
-                    <div id="nav-elem-1" class="nav-elem">
-                        <a onclick="window.location.href='features.html'">Features</a>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
-                                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <h3>Zippay</h3>
                     </div>
-                    <div id="nav-elem-2" class="nav-elem">
-                        <a onclick="window.location.href='solutions.html'">Solutions</a>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
-                                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div id="nav-elem-3" class="nav-elem">
-                        <a onclick="window.location.href='integrations.html'">Integrations</a>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
-                                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div id="nav-elem-4" class="nav-elem">
-                        <a>Pricing</a>
-                    </div>
-                    <div id="nav-elem-5" class="nav-elem">
-                        <a>Company</a>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
-                                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
+                    <div class="nav-center nav-section">
+                        <div id="nav-elem-1" class="nav-elem">
+                            <a>Features</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div id="nav-elem-2" class="nav-elem">
+                            <a onclick="window.location.href='solutions.html'">Solutions</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div id="nav-elem-3" class="nav-elem">
+                            <a onclick="window.location.href='integrations.html'">Integrations</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div id="nav-elem-4" class="nav-elem">
+                            <a onclick="window.location.href='pricing.html'">Pricing</a>
+                        </div>
+                        <div id="nav-elem-5" class="nav-elem">
+                            <a onclick="window.location.href='blog.html'">Blog</a>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.12036 6.55859L8.00036 9.43859L10.8804 6.55859" stroke="#0A0A0A"
+                                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
 
-                </div>
-                <div class="nav-right nav-section">
-                    <div id="btn-1" class="nav-btn">Sign In</div>
-                    <div id="btn-2" class="nav-btn">Get Started</div>
-                    <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 12H21M3 6H21M3 18H21" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
+                    </div>
+                    <div class="nav-right nav-section">
+                        <button class="btn-1 nav-btn">Sign In</button>
+                        <button class="btn-2 nav-btn">Get Started</button>
+                        <svg class="hamburger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21M3 6H21M3 18H21" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
             </nav>
+
             <div class="hero-box">
-                <div class="hero-upper">
-                    <div class="hero-header">
-                        <h5>Startups</h5>
-                    </div>
-                    <div class="hero-title">
-                        <h1 class="main-title hero-desktop-title">Spend Management for</h1>
-                        <h1 class="main-title hero-desktop-title">Your Startup</h1>
-                        <h1 class="title hero-mobile-title">Spend Management for Your Startup</h1>
-                    </div>
+                <div class="hero-text">
+                    <h5 class="page-name">Pricing</h5>
+                    <h1 class="title">Spend Wisely, Save More</h1>
                     <div class="hero-sub-title">
-                        <h5 class="sub-title hero-sub-title-desktop">Scale and run your business and let Zippay help optimize your</h5>
-                        <h5 class="sub-title hero-sub-title-desktop">spending with a single finance operations platform</h5>
-                        <h5 class="sub-title hero-sub-title-mobile">Scale and run your business and let Zippay help optimize your spending with a single finance operations platform</h5>
-                    </div>
-                    <div class="hero-buttons">
-                        <button class="button green-button">Get Started</button>
-                        <button class="button btn-2">Why Zippay</button>
+                        <h5 class="description hero-sub-title-desktop">No matter where you are in your growth or the world, Zippay is</h5>
+                        <h5 class="description hero-sub-title-desktop">designed to save you time and money</h5>
+                        <h5 class="description hero-sub-title-mobile">No matter where you are in your growth or the world, Zippay is designed to save you time and money</h5>
                     </div>
                 </div>
-                <div class="hero-lower">
-                    <div class="hero-card-1">
-                        <img class="hero-absolute-img" src="./images/Solutions Images/hero-card-1.png" alt="">
+
+                <div class="hero-cards">
+                    <div class="hero-card">
+                        <div class="hero-card-upper">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="white"/>
+                                    <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#A199FF" stroke-width="0.5"/>
+                                    <g filter="url(#filter0_i_432_39502)">
+                                    <rect x="6" y="6" width="28" height="28" rx="8" fill="#A199FF"/>
+                                    <rect x="6.25" y="6.25" width="27.5" height="27.5" rx="7.75" stroke="#A199FF" stroke-width="0.5"/>
+                                    <path d="M15 18.2363H13.75C13.0596 18.2363 12.5 17.6707 12.5 16.973V16.8044C12.5 16.1387 12.8879 15.5356 13.4898 15.2652L19.3231 12.6452C19.754 12.4516 20.246 12.4516 20.6769 12.6452L26.5102 15.2652C27.1121 15.5356 27.5 16.1387 27.5 16.8044V16.973C27.5 17.6707 26.9404 18.2363 26.25 18.2363H25M15 18.2363V24.1314M15 18.2363H18.3333M15 24.1314H13.75C13.0596 24.1314 12.5 24.6969 12.5 25.3946V26.2368C12.5 26.9344 13.0596 27.5 13.75 27.5H26.25C26.9404 27.5 27.5 26.9344 27.5 26.2368V25.3946C27.5 24.6969 26.9404 24.1314 26.25 24.1314H25M15 24.1314H18.3333M25 18.2363V24.1314M25 18.2363H21.6667M25 24.1314H21.6667M21.6667 18.2363V24.1314M21.6667 18.2363H18.3333M21.6667 24.1314H18.3333M18.3333 18.2363V24.1314" stroke="#372E9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_i_432_39502" x="6" y="2" width="28" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="-4"/>
+                                    <feGaussianBlur stdDeviation="4"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.64 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_432_39502"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>                                    
+                            </div>
+                            <div class="heading">
+                                <h3 class="heading">Basic Plan:</h3>
+                            </div>
+                            <div class="description">
+                                <h5 class="description">Perfect for small businesses with essential tools for streamlined financial management.</h5>
+                            </div>
+                            <div class="separate-line">
+                                <svg width="336" height="1" viewBox="0 0 336 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="336" y1="0.5" y2="0.5" stroke="#D4D4D4" stroke-dasharray="3 3"/>
+                                    </svg>                                    
+                            </div>
+                            <div class="card-pricing">
+                                <h5>$15 <span class="description">/ Per Month</span></h5>
+                            </div>
+                            <button class="button">Get Started</button>
+                        </div>
+                        <div class="hero-card-lower">
+                            <h3 id="heading" class="description">Added Features:</h3>
+                            <h5 class="description sub-head">Basic Expense Tracking</h5>
+                            <h5 class="description sub-head">Standard Global Corporate Card</h5>
+                            <h5 class="description sub-head">Manual Accounts Payable Processing</h5>
+                            <h5 class="description sub-head">Basic Procurement Tools</h5>
+                            <h5 class="description sub-head">Monthly Reporting</h5>
+                        </div>
                     </div>
-                    <div class="hero-card-2">
-                        <img class="hero-mobile-img" src="./images/Solutions Images/hero-card-2.png" alt="">
+                    <div class="hero-card hero-card-2">
+                        <div class="hero-card-upper">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#00E599" stroke-width="0.5"/>
+                                    <g filter="url(#filter0_i_432_63452)">
+                                    <rect x="6" y="6" width="28" height="28" rx="8" fill="#00E599"/>
+                                    <rect x="6.25" y="6.25" width="27.5" height="27.5" rx="7.75" stroke="#00E599" stroke-width="0.5"/>
+                                    <path opacity="0.12" d="M15.8687 23.4599L15 29.9999L19.5884 27.2469C19.7381 27.1571 19.8129 27.1122 19.8928 27.0947C19.9634 27.0791 20.0366 27.0791 20.1072 27.0947C20.1871 27.1122 20.2619 27.1571 20.4116 27.2469L25 29.9999L24.1319 23.457L23.8827 24.0587C23.728 24.4322 23.4312 24.729 23.0577 24.8838C22.6841 25.0385 22.2644 25.0385 21.8909 24.8838L20.583 24.342C20.2094 24.1876 19.7899 24.1879 19.4166 24.3428L18.1077 24.8842C17.7343 25.0386 17.315 25.0385 16.9418 24.8839C16.5685 24.7293 16.2719 24.4328 16.1171 24.0597L15.8687 23.4599Z" fill="#00452E"/>
+                                    <path d="M15.8687 23.4599L15 30L19.5884 27.247C19.7381 27.1572 19.8129 27.1123 19.8928 27.0947C19.9634 27.0792 20.0366 27.0792 20.1072 27.0947C20.1871 27.1123 20.2619 27.1572 20.4116 27.247L25 30L24.1319 23.4571M24.4259 12.2489C24.5803 12.6224 24.8768 12.9193 25.25 13.0743L26.5589 13.6165C26.9325 13.7712 27.2292 14.068 27.384 14.4415C27.5387 14.8151 27.5387 15.2348 27.384 15.6084L26.8422 16.9164C26.6874 17.2901 26.6872 17.7102 26.8427 18.0837L27.3835 19.3913C27.4602 19.5764 27.4997 19.7747 27.4997 19.975C27.4998 20.1752 27.4603 20.3736 27.3837 20.5586C27.3071 20.7436 27.1947 20.9118 27.0531 21.0534C26.9114 21.195 26.7433 21.3073 26.5582 21.3839L25.2503 21.9256C24.8768 22.0801 24.5799 22.3765 24.4249 22.7498L23.8827 24.0588C23.728 24.4323 23.4312 24.7291 23.0577 24.8838C22.6841 25.0386 22.2644 25.0386 21.8909 24.8838L20.583 24.342C20.2094 24.1877 19.7899 24.188 19.4166 24.3429L18.1077 24.8843C17.7343 25.0387 17.315 25.0386 16.9418 24.884C16.5685 24.7293 16.2719 24.4329 16.1171 24.0598L15.5748 22.7504C15.4204 22.3769 15.1239 22.08 14.7506 21.925L13.4417 21.3828C13.0684 21.2282 12.7717 20.9316 12.6169 20.5582C12.4621 20.1849 12.4619 19.7654 12.6163 19.3919L13.1581 18.0839C13.3124 17.7104 13.3121 17.2908 13.1572 16.9175L12.6162 15.6076C12.5395 15.4226 12.5 15.2243 12.5 15.024C12.5 14.8237 12.5394 14.6254 12.616 14.4403C12.6927 14.2553 12.805 14.0872 12.9467 13.9456C13.0883 13.804 13.2565 13.6917 13.4415 13.6151L14.7495 13.0733C15.1227 12.919 15.4194 12.6229 15.5745 12.25L16.1166 10.9411C16.2714 10.5676 16.5681 10.2708 16.9417 10.116C17.3152 9.96132 17.7349 9.96132 18.1084 10.116L19.4164 10.6578C19.7899 10.8122 20.2095 10.8119 20.5828 10.657L21.8922 10.1169C22.2657 9.96224 22.6853 9.96228 23.0588 10.117C23.4322 10.2717 23.729 10.5684 23.8837 10.9418L24.426 12.2511L24.4259 12.2489Z" stroke="#00452E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_i_432_63452" x="6" y="2" width="28" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="-4"/>
+                                    <feGaussianBlur stdDeviation="4"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.64 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_432_63452"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>                                                                       
+                            </div>
+                            <div class="heading">
+                                <h3 class="heading">Pro Plan:</h3>
+                            </div>
+                            <div class="description">
+                                <h5 class="description">For growing businesses, providing advanced tools for enhanced financial control.</h5>
+                            </div>
+                            <div class="separate-line">
+                                <svg width="336" height="1" viewBox="0 0 336 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="336" y1="0.5" y2="0.5" stroke="#D4D4D4" stroke-dasharray="3 3"/>
+                                    </svg>                                    
+                            </div>
+                            <div class="card-pricing">
+                                <h5>$50 <span class="description">/ Per Month</span></h5>
+                            </div>
+                            <button class="button">Get Started</button>
+                        </div>
+                        <div class="hero-card-lower">
+                            <h3 id="heading" class="description">Added Features:</h3>
+                            <h5 class="description sub-head">Advanced Expense Management</h5>
+                            <h5 class="description sub-head">Enhanced Global Corporate Card Features</h5>
+                            <h5 class="description sub-head">Automated Accounts Payable Processing</h5>
+                            <h5 class="description sub-head">Integrated Procurement Solutions</h5>
+                            <h5 class="description sub-head">Weekly Financial Insights</h5>
+                        </div>
                     </div>
-                    <div class="hero-card-3">
-                        <img class="hero-absolute-img" src="./images/Solutions Images/hero-card-3.png" alt="">
+                    <div class="hero-card">
+                        <div class="hero-card-upper">
+                            <div class="icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="white"/>
+                                    <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#52C9E0" stroke-width="0.5"/>
+                                    <g filter="url(#filter0_i_432_39475)">
+                                    <rect x="6" y="6" width="28" height="28" rx="8" fill="#52C9E0"/>
+                                    <rect x="6.25" y="6.25" width="27.5" height="27.5" rx="7.75" stroke="#52C9E0" stroke-width="0.5"/>
+                                    <path opacity="0.12" d="M24.833 19.168H20.833V27.5013H27.4997V21.8346C27.4997 20.9012 27.4997 20.4345 27.318 20.078C27.1582 19.7644 26.9033 19.5094 26.5897 19.3496C26.2331 19.168 25.7664 19.168 24.833 19.168Z" fill="black"/>
+                                    <path d="M20.8337 19.1667H24.8337C25.7671 19.1667 26.2338 19.1667 26.5903 19.3483C26.9039 19.5081 27.1589 19.7631 27.3187 20.0767C27.5003 20.4332 27.5003 20.8999 27.5003 21.8333V27.5M20.8337 27.5V15.1667C20.8337 14.2332 20.8337 13.7665 20.652 13.41C20.4922 13.0964 20.2372 12.8414 19.9236 12.6817C19.5671 12.5 19.1004 12.5 18.167 12.5H15.167C14.2336 12.5 13.7669 12.5 13.4103 12.6817C13.0967 12.8414 12.8418 13.0964 12.682 13.41C12.5003 13.7665 12.5003 14.2332 12.5003 15.1667V27.5M28.3337 27.5H11.667M15.417 15.8333H17.917M15.417 19.1667H17.917M15.417 22.5H17.917" stroke="#372E9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_i_432_39475" x="6" y="2" width="28" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="-4"/>
+                                    <feGaussianBlur stdDeviation="4"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.64 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_432_39475"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>                                                                        
+                            </div>
+                            <div class="heading">
+                                <h3 class="heading">Enterprise Plan:</h3>
+                            </div>
+                            <div class="description">
+                                <h5 class="description">For large organizations, delivering global financial management and automation tools.</h5>
+                            </div>
+                            <div class="separate-line">
+                                <svg width="336" height="1" viewBox="0 0 336 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="336" y1="0.5" y2="0.5" stroke="#D4D4D4" stroke-dasharray="3 3"/>
+                                    </svg>                                    
+                            </div>
+                            <div class="card-pricing">
+                                <h5>$80 <span class="description">/ Per Month</span></h5>
+                            </div>
+                            <button class="button">Get Started</button>
+                        </div>
+                        <div class="hero-card-lower">
+                            <h3 id="heading" class="description">Added Features:</h3>
+                            <h5 class="description sub-head">Comprehensive Expense Management</h5>
+                            <h5 class="description sub-head">Premium Corporate Card Benefits</h5>
+                            <h5 class="description sub-head">Automated Accounts Payable and Receivable</h5>
+                            <h5 class="description sub-head">Customizable Procurement Workflows</h5>
+                            <h5 class="description sub-head">Real-Time Analytics and Reporting</h5>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="hero-footer">
                 <h3>Trusted by 25K+ Businesses Teams</h3>
                 <div class="brands-list">
@@ -177,163 +319,21 @@
                     </svg>
 
                 </div>
-                <div class="hero-footer-footer">
-                    <h5>View Customer Stories</h5>
-                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.6665 7.0013H13.3332M13.3332 7.0013L7.49984 1.16797M13.3332 7.0013L7.49984 12.8346" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
-                </div>
             </div>
         </section>
 
-        <section class="contents-section">
-            <div class="contents-sec contents-sec-upper">
-                <div class="text">
-                    <div class="text-upper">
-                        <div class="content-header">
-                            <h5 class="page-name">Expense Management</h5>
-                        </div>
-                        <div class="title">
-                            <h1>Set Limits to Prevent Overspending</h1>
-                        </div>
-                        <div class="sub-title">
-                            <h5>Stay in policy and on budget with proactive policy controls, configurable approvals, and
-                                AI-powered reconciliation</h5>
-                        </div>
-                    </div>
-                    <button>Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.1665 7.0013H12.8332M12.8332 7.0013L6.99984 1.16797M12.8332 7.0013L6.99984 12.8346" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        </button>
-                </div>
-                <div class="image">
-                    <img src="./images/platform-card-1.webp" alt="">
+        <section class="comparison-section">
+            <div class="comparison-text">
+                <h1 class="title">Comparison Plan</h1>
+                <div class="comparison-sub-title">
+                    <h5 class="description comparison-sub-head-desktop">Whether you're a small startup or a large enterprise, we offer scalable solutions tailored to meet your</h5>
+                    <h5 class="description comparison-sub-head-desktop">financial management requirements</h5>
+                    <h5 class="description comparison-sub-head-mobile">Whether you're a small startup or a large enterprise, we offer scalable solutions tailored to meet your financial management requirements</h5>
                 </div>
             </div>
-            <div class="contents-sec-desktop contents-sec contents-sec-lower">
-                <div class="image">
-                    <img src="./images/platform-card-2.webp" alt="">
-                </div>
-                <div class="text">
-                    <div class="text-upper">
-                        <div class="content-header">
-                            <h5 class="page-name">Accounting Automation</h5>
-                        </div>
-                        <div class="title">
-                            <h1>Spend Smarter, Save Every Time</h1>
-                        </div>
-                        <div class="sub-title">
-                            <h5>Use instant insights to get the best price on software, stop redundant spend before it
-                                happens, and make every dollar go further</h5>
-                        </div>
-                    </div>
-                    <button>Learn More <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.1665 7.0013H12.8332M12.8332 7.0013L6.99984 1.16797M12.8332 7.0013L6.99984 12.8346" stroke="#0A0A0A" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        </button>
-                </div>
-            </div>
-            <div class="contents-lower-mobile contents-sec contents-sec-lower">
-                <div class="text">
-                    <div class="text-upper">
-                        <div class="platform-header">
-                            <h5 class="page-name">Accounting Automation</h5>
-                        </div>
-                        <div class="title">
-                            <h1>Spend Smarter, Save Every Time</h1>
-                        </div>
-                        <div class="sub-title">
-                            <h5>Use instant insights to get the best price on software, stop redundant spend before it
-                                happens, and make every dollar go further</h5>
-                        </div>
-                    </div>
-                    <button>Learn More <i class="ri-arrow-right-line"></i></button>
-                </div>
-                <div class="image">
-                    <img src="./images/platform-card-2.webp" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="features-section">
-            <div class="features-left features-sec">
-                <div class="features-left-upper">
-                    <h5 class="page-name">Benefits</h5>
-                    <div class="features-left-title">
-                        <h1 class="title">Built to Scale with You</h1>
-                    </div>
-                    <div class="features-left-sub-title">
-                        <h5 class="sub-title">Our solution grows seamlessly with your business, adapting to your</h5>
-                        <h5 class="sub-title">expanding needs.</h5>
-                    </div>
-                </div>
-                <div class="features-left-lower">
-                    <div class="features-card">
-                        <div class="features-card-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="#E5FCF5"/>
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#99F5D6" stroke-width="0.5"/>
-                                <path d="M12.5 23.75L20 27.5L27.5 23.75" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.5 20L20 23.75L27.5 20" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 12.5L12.5 16.25L20 20L27.5 16.25L20 12.5Z" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="features-card-text">
-                            <h3 class="heading">Completely Flexible</h3>
-                            <h5 class="description">Adapt our solutions to fit your unique business needs effortlessly</h5>
-                        </div>
-                    </div>
-                    <div class="features-card">
-                        <div class="features-card-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="#E5FCF5"/>
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#99F5D6" stroke-width="0.5"/>
-                                <path d="M12.5 23.75L20 27.5L27.5 23.75" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.5 20L20 23.75L27.5 20" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 12.5L12.5 16.25L20 20L27.5 16.25L20 12.5Z" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                
-                        </div>
-                        <div class="features-card-text">
-                            <h3 class="heading">Operate Globally</h3>
-                            <h5 class="description">Seamlessly manage and expand your business across international borders</h5>
-                        </div>
-                    </div>
-                    <div class="features-card">
-                        <div class="features-card-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="#E5FCF5"/>
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#99F5D6" stroke-width="0.5"/>
-                                <path d="M12.5 23.75L20 27.5L27.5 23.75" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.5 20L20 23.75L27.5 20" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 12.5L12.5 16.25L20 20L27.5 16.25L20 12.5Z" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                        </div>
-                        <div class="features-card-text">
-                            <h3 class="heading">Integrate and Stay Signed</h3>
-                            <h5 class="description">Easily connect with existing systems and maintain secure access</h5>
-                        </div>
-                    </div>
-                    <div class="features-card">
-                        <div class="features-card-icon">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" fill="#E5FCF5"/>
-                                <rect x="0.25" y="0.25" width="39.5" height="39.5" rx="9.75" stroke="#99F5D6" stroke-width="0.5"/>
-                                <path d="M12.5 23.75L20 27.5L27.5 23.75" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12.5 20L20 23.75L27.5 20" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M20 12.5L12.5 16.25L20 20L27.5 16.25L20 12.5Z" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                        </div>
-                        <div class="features-card-text">
-                            <h3 class="heading">Extension of Your Team</h3>
-                            <h5 class="description">Enhance your capabilities with our platform acting as your support</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="features-right features-sec">
-                <img src="./images/Solutions Images/features-img.png" alt="">
+            <div class="image-container">
+                <img class="comparison-image-desktop" src="../images/Pricing Images/comparison-image.png" alt="">
+                <img class="comparison-image-mobile" src="../images/Pricing Images/comparison-image-mobile.png" alt="">
             </div>
         </section>
 
@@ -573,9 +573,7 @@
                 </div>
             </div>
         </footer>
-    </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
 </body>
 </html>

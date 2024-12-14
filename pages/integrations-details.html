@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/contact-us.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/integrations-details.css">
 </head>
 <body>
+
     <div id="main">
         <section class="hero-section">
             <nav class="main-nav">
@@ -62,7 +63,7 @@
                     <div class="nav-right nav-section">
                         <button class="btn-1 nav-btn">Sign In</button>
                         <button class="btn-2 nav-btn">Get Started</button>
-                        <svg class="hamburger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12H21M3 6H21M3 18H21" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -72,42 +73,90 @@
             </nav>
 
             <div class="hero-box">
-                <h5 class="page-name">Contact Us</h5>
-                <h1 class="title">We'd Love to Hear From You</h1>
-                <div class="hero-sub-title">
-                    <h5 class="description hero-sub-title-desktop">Share your thoughts, suggestions, or any questions you may have with us. Your input helps us</h5>
-                    <h5 class="description hero-sub-title-desktop">improve and enhance our services to better meet your needs.</h5>
-                    <h5 class="description hero-sub-title-mobile">Share your thoughts, suggestions, or any questions you may have with us. Your input helps us improve and enhance our services to better meet your needs.</h5>
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.44055 10.8772L6.56055 7.99719L9.44055 5.11719" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h5 class="description">Back to Integrations</h5>
                 </div>
-            </div>
-
-            <div class="hero-box-2">
-                <div class="hero-form-wrapper">
-                    <div class="hero-form">
-                        <div class="hero-form-name">
-                            <div class="hero-form-first-name input">
-                                <label class="description" for="first-name">First Name</label>
-                                <input type="text" placeholder="John">
-                            </div>
-                            <div class="hero-form-last-name input">
-                                <labe class="description"l for="last-name">Last Name</labe>
-                                <input type="text" placeholder="Doe">
-                            </div>
-                        </div>
-                        <div class="hero-form-email input">
-                            <label class="description" for="email">Email</label>
-                            <input type="text" placeholder="johndoe@mail.com">
-                        </div>
-                        <div class="hero-form-description input">
-                            <label class="description" for="description">Description</label>
-                            <input type="text" placeholder="Message">
-                        </div>
-                        <div class="hero-form-checkbox">
-                            <input type="checkbox" name="problem_description" id="problem-description">
-                            <label for="problem-description">Problem Description</label>
+                <div class="hero-lower">
+                    <div class="hero-lower-left">
+                        <img src="../images/Integrations Details Images/hero-icon.png" alt="">
+                    </div>
+                    <div class="hero-lower-right">
+                        <h1>Notion</h1>
+                        <h5 class="description">Notion is the all-in-one workspace for notes, project management, documents, and collaboration</h5>
+                        <div class="hero-tags">
+                            <div class="hero-tag description"><h5>Collaboration</h5></div>
+                            <div class="hero-tag description"><h5>Popular</h5></div>
+                            <div class="hero-tag description"><h5>Provisioning App</h5></div>
                         </div>
                     </div>
-                    <button class="button green-button">Send Message</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="content-left">
+                <h3 class="heading">Support</h3>
+                <div class="support-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6567 3.37605C13.8427 3.36164 14.0281 3.41006 14.1833 3.51355L15.3167 4.26939L6.15167 4.97355L5.20417 4.02605L13.6567 3.37605ZM4.16667 5.34605V12.7794C4.16667 12.9597 4.22515 13.1351 4.33333 13.2794L5 14.1677V6.17939L4.16667 5.34605ZM15.8333 15.0627L6.66667 15.7677V6.60605L15.8333 5.90105V15.0627ZM17.5 15.0627C17.5 15.4827 17.3414 15.8871 17.0561 16.1952C16.7707 16.5033 16.3795 16.6923 15.9608 16.7244L6.35333 17.4636C6.07384 17.485 5.79345 17.4356 5.5381 17.32C5.28276 17.2043 5.06071 17.0261 4.8925 16.8019L3 14.2786C2.67544 13.8458 2.5 13.3195 2.5 12.7786V4.10605C2.50003 3.68612 2.65858 3.28167 2.94395 2.97359C3.22931 2.66551 3.62046 2.47651 4.03917 2.44439L13.5292 1.71439C14.0866 1.67154 14.6423 1.81677 15.1075 2.12689L16.7575 3.22689C16.9858 3.37904 17.1731 3.58522 17.3026 3.82712C17.4322 4.06902 17.4999 4.33916 17.5 4.61355V15.0627ZM14.1667 7.91772C14.1667 7.69671 14.0789 7.48475 13.9226 7.32847C13.7663 7.17219 13.5543 7.08439 13.3333 7.08439C13.1123 7.08439 12.9004 7.17219 12.7441 7.32847C12.5878 7.48475 12.5 7.69671 12.5 7.91772V11.4844L10.2933 7.89772C10.2187 7.77646 10.1143 7.67633 9.99001 7.60689C9.86572 7.53745 9.72571 7.50101 9.58333 7.50105H9.16667C8.94565 7.50105 8.73369 7.58885 8.57741 7.74513C8.42113 7.90141 8.33333 8.11337 8.33333 8.33439V14.1677C8.33333 14.3887 8.42113 14.6007 8.57741 14.757C8.73369 14.9133 8.94565 15.0011 9.16667 15.0011C9.38768 15.0011 9.59964 14.9133 9.75592 14.757C9.9122 14.6007 10 14.3887 10 14.1677V10.6011L12.2067 14.1877C12.2813 14.309 12.3857 14.4091 12.51 14.4785C12.6343 14.548 12.7743 14.5844 12.9167 14.5844H13.3333C13.5543 14.5844 13.7663 14.4966 13.9226 14.3403C14.0789 14.184 14.1667 13.9721 14.1667 13.7511V7.91772Z" fill="#00895C"/>
+                    </svg>
+                    <h5>Notion</h5>
+                </div>
+                <div class="support-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.75V18.25" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.75 4.75H8.125C7.42881 4.75 6.76113 5.02656 6.26884 5.51884C5.77656 6.01113 5.5 6.67881 5.5 7.375C5.5 8.07119 5.77656 8.73887 6.26884 9.23116C6.76113 9.72344 7.42881 10 8.125 10H11.875C12.5712 10 13.2389 10.2766 13.7312 10.7688C14.2234 11.2611 14.5 11.9288 14.5 12.625C14.5 13.3212 14.2234 13.9889 13.7312 14.4812C13.2389 14.9734 12.5712 15.25 11.875 15.25H5.5" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h5>Pricing</h5>
+                </div>
+                <div class="support-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.75 2.5H5.5C5.10218 2.5 4.72064 2.65804 4.43934 2.93934C4.15804 3.22064 4 3.60218 4 4V16C4 16.3978 4.15804 16.7794 4.43934 17.0607C4.72064 17.342 5.10218 17.5 5.5 17.5H14.5C14.8978 17.5 15.2794 17.342 15.5607 17.0607C15.842 16.7794 16 16.3978 16 16V7.75L10.75 2.5Z" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.75 2.5V7.75H16" stroke="#00895C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h5>Terms of Service</h5>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="paragraph">
+                        <h3>About</h3>
+                        <h5 class="description">Notion is an all-in-one workspace designed to enhance productivity and organization across teams and individuals. By combining elements of note-taking, task management, databases, and collaborative tools into a single platform, Notion provides a flexible and intuitive environment for managing projects, tracking progress, and coordinating work. Its customizable pages and templates allow users to tailor the workspace to their specific needs, making it a versatile solution for a wide range of organizational tasks.</h5>
+                        <h5 class="description">With Notion, teams can streamline their workflows by integrating various functions into one cohesive system. The platform supports real-time collaboration, enabling users to work together on documents, share updates, and maintain visibility into project developments. This collaborative aspect ensures that all team members stay aligned, fostering better communication and efficiency within the organization.</h5>
+                        <h5 class="description">Additionally, Notion’s robust integration capabilities make it easy to connect with other tools and services, enhancing its functionality and ensuring seamless data flow across different applications. Whether you’re managing a complex project, organizing personal tasks, or coordinating team efforts, Notion offers the tools and flexibility needed to optimize your productivity and achieve your goals.</h5>
+                </div>
+                <div class="paragraph">
+                        <h3>Requirements</h3>
+                        <h5 class="description">To effectively use Notion, you'll need a stable internet connection to ensure seamless access and real-time updates. The platform is web-based, so access via a modern web browser is essential. For the best experience, using the latest versions of browsers such as Google Chrome, Mozilla Firefox, or Safari is recommended. Additionally, Notion offers dedicated desktop and mobile apps for Windows, macOS, iOS, and Android, allowing users to manage their work from any device.</h5>
+                        <h5 class="description">Notion’s functionality is designed to be intuitive, but having a basic understanding of digital organization tools can enhance your experience. Familiarity with concepts like databases, task management, and collaborative workspaces will help you navigate and utilize Notion’s features more effectively. Users should also be comfortable with creating and customizing pages, as Notion’s strength lies in its flexibility and customization options.</h5>
+                        <h5 class="description">For teams or businesses considering Notion, ensuring that all members have their own accounts and access permissions set up correctly is crucial. Notion allows for various user roles and permissions, so understanding these settings will help in managing team collaboration and data security.</h5>
+                </div>
+                <div class="paragraph">
+                        <h3>Getting Started</h3>
+                        <h5 class="description">Getting started with Notion is straightforward and can be accomplished in just a few steps. Begin by signing up for an account on the Notion website or by downloading the desktop or mobile app. After creating your account, you’ll be guided through a brief tutorial that introduces you to the platform’s core features, including how to create pages, add content, and use templates. This initial walkthrough is designed to familiarize you with Notion’s interface and help you get up and running quickly.</h5>
+                        <h5 class="description">Once you’re familiar with the basics, you can start building your workspace by creating and customizing pages to fit your needs. Notion offers a variety of templates for different use cases, such as project management, meeting notes, and personal to-do lists, which you can use as a starting point.</h5>
+                        <h5 class="description">To maximize your productivity, consider exploring Notion’s integration options. Connect Notion with other tools you use, such as Google Drive or Slack, to streamline your workflows and enhance collaboration. Additionally, you can invite team members or collaborators to join your workspace, set permissions, and share documents or projects.</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="CTA-section">
+            <div class="CTA-box">
+                <div class="cta-title">
+                    <h1 class="title cta-title-desktop">A Better Way to Manage</h1>
+                    <h1 class="title cta-title-desktop">Your Money</h1>
+                    <h1 class="title cta-title-mobile">A Better Way to Manage Your Money</h1>
+                </div>
+                <div class="cta-sub-title">
+                    <h5 class="sub-title cta-sub-title-desktop">Zippay enables you to achieve clarity and significant results on a large scale by linking tasks and</h5>
+                    <h5 class="sub-title cta-sub-title-desktop">workflows to the overarching objectives of the company</h5>
+                    <h5 class="sub-title cta-sub-title-mobile">Zippay enables you to achieve clarity and significant results on a large scale by linking tasks and workflows to the overarching objectives of the company</h5>
+                </div>
+                <div class="cta-buttons">
+                    <button class="button green-button">Get Started</button>
+                    <button class="button btn-2">Why Zippay</button>
                 </div>
             </div>
         </section>
@@ -237,5 +286,6 @@
             </div>
         </footer>
     </div>
+
 </body>
 </html>

@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/integrations.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/contact-us.css">
 </head>
 <body>
-    
     <div id="main">
         <section class="hero-section">
             <nav class="main-nav">
@@ -63,7 +62,7 @@
                     <div class="nav-right nav-section">
                         <button class="btn-1 nav-btn">Sign In</button>
                         <button class="btn-2 nav-btn">Get Started</button>
-                        <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        <svg class="hamburger-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 12H21M3 6H21M3 18H21" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -73,75 +72,42 @@
             </nav>
 
             <div class="hero-box">
-                <div class="hero-badge"><h5>Integrations</h5></div>
-                <div class="hero-title">
-                    <h1 class="main-title hero-title-desktop">Integration Tools You Need</h1>
-                    <h1 class="main-title hero-title-desktop">to Grow Business</h1>
-                    <h1 class="main-title hero-title-mobile">Integration Tools You Need to Grow Business</h1>
-                </div>
+                <h5 class="page-name">Contact Us</h5>
+                <h1 class="title">We'd Love to Hear From You</h1>
                 <div class="hero-sub-title">
-                    <h5 class="sub-title hero-sub-title-desktop">Seamlessly connect with essential systems and applications to streamline</h5>
-                    <h5 class="sub-title hero-sub-title-desktop">operations and support your business growth</h5>
-                    <h5 class="sub-title hero-sub-title-mobile">Seamlessly connect with essential systems and applications to streamline operations and support your business growth</h5>
+                    <h5 class="description hero-sub-title-desktop">Share your thoughts, suggestions, or any questions you may have with us. Your input helps us</h5>
+                    <h5 class="description hero-sub-title-desktop">improve and enhance our services to better meet your needs.</h5>
+                    <h5 class="description hero-sub-title-mobile">Share your thoughts, suggestions, or any questions you may have with us. Your input helps us improve and enhance our services to better meet your needs.</h5>
                 </div>
             </div>
-        </section>
 
-        <section class="categories-section">
-            <div class="categories-left">
-                <h3>Categories</h3>
-                <div class="cat-names">
-                    <h5 class="first-cat description">All Categories</h5>
-                    <h5 class="description">Accounting</h5>
-                    <h5 class="description">Business Operations</h5>
-                    <h5 class="description">Collaboration</h5>
-                    <h5 class="description">Embedded Partner</h5>
-                    <h5 class="description">Financial Benefits</h5>
-                    <h5 class="description">Hiring & Onboarding</h5>
-                    <h5 class="description">Insight & Analytics</h5>
-                    <h5 class="description">Learning Management</h5>
-                    <h5 class="description">Point of Sale</h5>
-                    <h5 class="description">Reward & Recognitions</h5>
-                    <h5 class="description">Time Tracking</h5>
-                </div>
-            </div>
-            <div class="categories-right">
-                <div class="categories-right-upper">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.7499 16.75L13.4874 13.4875M15.25 9.25C15.25 12.5637 12.5637 15.25 9.25 15.25C5.93629 15.25 3.25 12.5637 3.25 9.25C3.25 5.93629 5.93629 3.25 9.25 3.25C12.5637 3.25 15.25 5.93629 15.25 9.25Z" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <h5 class="description">Find an app...</h5>
-                </div>
-                <div class="categories-right-middle">
-                    <!-- Cards rendered through JS  -->
-                </div>
-                <div class="categories-right-lower">
-                    <div class="left">
-                        <h5 class="description">Page 1 of 10</h5>
+            <div class="hero-box-2">
+                <div class="hero-form-wrapper">
+                    <div class="hero-form">
+                        <div class="hero-form-name">
+                            <div class="hero-form-first-name input">
+                                <label class="description" for="first-name">First Name</label>
+                                <input type="text" placeholder="John">
+                            </div>
+                            <div class="hero-form-last-name input">
+                                <labe class="description"l for="last-name">Last Name</labe>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="hero-form-email input">
+                            <label class="description" for="email">Email</label>
+                            <input type="text" placeholder="johndoe@mail.com">
+                        </div>
+                        <div class="hero-form-description input">
+                            <label class="description" for="description">Description</label>
+                            <input type="text" placeholder="Message">
+                        </div>
+                        <div class="hero-form-checkbox">
+                            <input type="checkbox" name="problem_description" id="problem-description">
+                            <label for="problem-description">Problem Description</label>
+                        </div>
                     </div>
-                    <div class="right">
-                        <button class="button btn-1">Previous</button>
-                        <button class="button green-button">Next</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="CTA-section">
-            <div class="CTA-box">
-                <div class="cta-title">
-                    <h1 class="title cta-title-desktop">A Better Way to Manage</h1>
-                    <h1 class="title cta-title-desktop">Your Money</h1>
-                    <h1 class="title cta-title-mobile">A Better Way to Manage Your Money</h1>
-                </div>
-                <div class="cta-sub-title">
-                    <h5 class="sub-title cta-sub-title-desktop">Zippay enables you to achieve clarity and significant results on a large scale by linking tasks and</h5>
-                    <h5 class="sub-title cta-sub-title-desktop">workflows to the overarching objectives of the company</h5>
-                    <h5 class="sub-title cta-sub-title-mobile">Zippay enables you to achieve clarity and significant results on a large scale by linking tasks and workflows to the overarching objectives of the company</h5>
-                </div>
-                <div class="cta-buttons">
-                    <button class="button green-button">Get Started</button>
-                    <button class="button btn-2">Why Zippay</button>
+                    <button class="button green-button">Send Message</button>
                 </div>
             </div>
         </section>
@@ -271,8 +237,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
