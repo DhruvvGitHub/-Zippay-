@@ -72,5 +72,4 @@ function renderCategories() {
         container.innerHTML += card;
     });
 }
-
 renderCategories();
