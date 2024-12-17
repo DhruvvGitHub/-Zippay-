@@ -91,3 +91,7 @@
         font-weight: 400;
         color: #737373;
     }
+
+    .answer h5 {
+        color: rgba(82, 82, 82, 1);
+    }
