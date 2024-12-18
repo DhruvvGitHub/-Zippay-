@@ -241,9 +241,19 @@
     }
 
     .categories-right-middle {
+        /* min-height: 5vh; */
         display: flex;
+        align-items: center;
         gap: 24px;
         flex-wrap: wrap;
+        position: relative;
+    }
+
+    .categories-right-middle>h5 {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-25%, -50%);
     }
 
     .categories-right-card {
@@ -282,6 +292,7 @@
     }
 
     .categories-right-lower {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
