@@ -55,6 +55,7 @@
 .hero-section {
     display: flex;
     flex-direction: column;
+    background-color: rgba(250, 250, 250, 1);
 }
 
 .main-nav {
@@ -88,7 +89,7 @@
 }
 
 .nav-center {
-    width: 50%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,6 +219,11 @@
     width: 1034px;
     height: 100%;
     object-fit: cover;
+    transform: translateY(0.9%);
+}
+
+.hero-image-box .hero-image-mobile {
+    display: none;
 }
 
 .hero-lower-footer {
@@ -474,6 +480,12 @@
     text-align: center;
 }
 
+.cta-sub-title h5 {
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+
 .cta-sub-title-mobile {
     display: none;
 }
@@ -605,6 +617,7 @@
         border-radius: 0px;
         border: none;
         padding: 0px;
+        background-color: transparent;
     }
     
     .nav-center {
@@ -641,12 +654,25 @@
     }
     
     .hero-image-box {
-        height: 250px;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 0px;
+        border-radius: 8px;
     }
     
-    .hero-image-box img {
-        width: 281.77px;
-        height: 229.27px;
+    .hero-image-box .hero-image-desktop {
+        display: none;
+    }
+    
+    .hero-image-box .hero-image-mobile {
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        transform: translateY(0%);
     }
     
     .hero-lower-footer .brands-list {
@@ -704,6 +730,10 @@
 
     .features-lower-mobile {
         display: block;
+    }
+
+    .features-lower-mobile h5 {
+        color: rgba(115, 115, 115, 1);
     }
 
 

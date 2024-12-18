@@ -1,4 +1,3 @@
-// Data for category cards
 const categories = [
     {
         icon: './images/Integrations Images/cat-card-1.png',
@@ -38,48 +37,88 @@ const categories = [
     },
 ];
 
-// Render category cards based on filter
-function renderCategories(filterCategory = 'All Categories') {
-    const container = document.querySelector('.categories-right-middle');
-    container.innerHTML = ''; // Clear the container
+const container = document.querySelector('.categories-right-middle');
+const pagination = document.querySelector('.categories-right-lower');
 
-    // Filter categories
+function renderCategories(filterCategory = 'All Categories') {
+    container.innerHTML = '';
+
     const filteredCategories = 
         filterCategory === 'All Categories'
             ? categories
             : categories.filter((cat) => cat.category === filterCategory);
 
-    // Generate and append cards
-    const cardsHTML = filteredCategories.map((category) => `
-        <div class="categories-right-card">
-            <div class="categories-details">
-                <div class="icon">
-                    <img src="${category.icon}" alt="${category.heading}">
+    if (filteredCategories.length === 0) {
+        const noResultText = `<h5 class="description">No result found</h5>`;
+        container.innerHTML = noResultText;
+        pagination.style.display = 'none'
+    }
+     else {
+        if(filteredCategories.length <= 6) {
+            pagination.style.display = 'none'
+            const cardsHTML = filteredCategories.map((category) => `
+                <div class="categories-right-card">
+                    <div class="categories-details">
+                        <div class="icon">
+                            <img src="${category.icon}" alt="${category.heading}">
+                        </div>
+                        <div class="name">
+                            <h3 class="heading">${category.heading}</h3>
+                            <h5 class="description">${category.category}</h5>
+                        </div>
+                    </div>
+                    <div class="categories-description">
+                        <h5 class="description">${category.detail}</h5>
+                    </div>
+                    <button class="categories-button">Learn More
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.6665 10.0013H16.3332M16.3332 10.0013L10.4998 4.16797M16.3332 10.0013L10.4998 15.8346" 
+                                  stroke="#0A0A0A" 
+                                  stroke-width="1.66667" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </div>
-                <div class="name">
-                    <h3 class="heading">${category.heading}</h3>
-                    <h5 class="description">${category.category}</h5>
-                </div>
-            </div>
-            <div class="categories-description">
-                <h5 class="description">${category.detail}</h5>
-            </div>
-            <button class="categories-button">Learn More
-                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.6665 10.0013H16.3332M16.3332 10.0013L10.4998 4.16797M16.3332 10.0013L10.4998 15.8346" 
-                          stroke="#0A0A0A" 
-                          stroke-width="1.66667" 
-                          stroke-linecap="round" 
-                          stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </div>
-    `).join('');
+            `).join('');
+    
+            container.innerHTML = cardsHTML; 
+        }
 
-    container.innerHTML = cardsHTML;
+        else {
+            pagination.style.display = 'flex'
+            const cardsHTML = filteredCategories.map((category) => `
+                <div class="categories-right-card">
+                    <div class="categories-details">
+                        <div class="icon">
+                            <img src="${category.icon}" alt="${category.heading}">
+                        </div>
+                        <div class="name">
+                            <h3 class="heading">${category.heading}</h3>
+                            <h5 class="description">${category.category}</h5>
+                        </div>
+                    </div>
+                    <div class="categories-description">
+                        <h5 class="description">${category.detail}</h5>
+                    </div>
+                    <button class="categories-button">Learn More
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.6665 10.0013H16.3332M16.3332 10.0013L10.4998 4.16797M16.3332 10.0013L10.4998 15.8346" 
+                                  stroke="#0A0A0A" 
+                                  stroke-width="1.66667" 
+                                  stroke-linecap="round" 
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            `).join('');
+    
+            container.innerHTML = cardsHTML; // Show the cards
+        }
+    }
 }
 
-// Setup filter functionality
+
 function setupFilters() {
     const categoryElements = document.querySelectorAll(".categories-left .cat-names h5");
 
@@ -98,5 +137,6 @@ function setupFilters() {
     });
 }
 
+
 renderCategories();
-setupFilters(); 
+setupFilters();
