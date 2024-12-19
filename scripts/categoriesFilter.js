@@ -51,11 +51,10 @@ function renderCategories(filterCategory = 'All Categories') {
     if (filteredCategories.length === 0) {
         const noResultText = `<h5 class="description">No result found</h5>`;
         container.innerHTML = noResultText;
-        pagination.style.display = 'none'
-    }
-     else {
-        if(filteredCategories.length <= 6) {
-            pagination.style.display = 'none'
+        pagination.style.display = 'none';
+    } else {
+        if (filteredCategories.length <= 6 && filterCategory !== 'All Categories') {
+            pagination.style.display = 'none';
             const cardsHTML = filteredCategories.map((category) => `
                 <div class="categories-right-card">
                     <div class="categories-details">
@@ -83,10 +82,8 @@ function renderCategories(filterCategory = 'All Categories') {
             `).join('');
     
             container.innerHTML = cardsHTML; 
-        }
-
-        else {
-            pagination.style.display = 'flex'
+        } else {
+            pagination.style.display = 'flex';
             const cardsHTML = filteredCategories.map((category) => `
                 <div class="categories-right-card">
                     <div class="categories-details">
@@ -113,11 +110,10 @@ function renderCategories(filterCategory = 'All Categories') {
                 </div>
             `).join('');
     
-            container.innerHTML = cardsHTML; // Show the cards
+            container.innerHTML = cardsHTML;
         }
     }
 }
-
 
 function setupFilters() {
     const categoryElements = document.querySelectorAll(".categories-left .cat-names h5");
@@ -136,7 +132,6 @@ function setupFilters() {
         });
     });
 }
-
 
 renderCategories();
 setupFilters();
